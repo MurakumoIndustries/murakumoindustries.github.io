@@ -29,16 +29,34 @@
                         <a href="./Gear" class="btn btn-outline-secondary btn-lg btn-block">Gear</a>
                     </div>
                     <div class="col-12 d-md-none d-block my-1">
-                        <a href="https://alice.colopl.jp/news/show" target="_blank" class="btn btn-outline-secondary btn-lg btn-block">News</a>
+                        <div class="btn-group w-100">
+                            <a href="https://alice.colopl.jp/news/show" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary btn-lg w-50">News(Pyramid)</a>
+                            <a href="https://api-aga.so-net.tw/news/show" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary btn-lg w-50">News(So-net)</a>
+                        </div>
                     </div>
                 </div>
-                <p class="copyright text-center text-secondary">All images and datas are copyright to <a href="https://colopl.co.jp/alicegearaegis/" target="_blank" >Pyramid,Inc. / COLOPL,Inc.</a> .</p>
+                <p class="copyright text-center text-secondary">All images and datas are copyright to <a href="https://colopl.co.jp/alicegearaegis/" target="_blank" rel="noopener noreferrer">Pyramid,Inc. / COLOPL,Inc.</a> / <a href="http://www.alicegear.so-net.tw/" target="_blank" rel="noopener noreferrer">So-net Entertainment Taiwan Limited.</a>.</p>
             </div>
-            <div class="d-none d-md-block col-lg-4 col-md-6">
-                <iframe class="news-iframe w-100 h-100" src="about:blank" data-src="https://alice.colopl.jp/news/show"></iframe>
+            <div id='news-container' class="d-none d-md-block col-lg-4 col-md-6">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="pyramid-news-tab" data-toggle="tab" href="#pyramid-news">Pyramid</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="sonet-news-tab" data-toggle="tab" href="#sonet-news">So-net</a>
+                    </li>
+                </ul>
+                <div class="tab-content w-100 h-100" style='background: lightgray;'>
+                    <div class="tab-pane fade show active w-100 h-100" id="pyramid-news" role="tabpanel">
+                        <iframe class="news-iframe w-100 h-100" src="about:blank" data-src="https://alice.colopl.jp/news/show"></iframe>
+                    </div>
+                    <div class="tab-pane fade w-100 h-100" id="sonet-news" role="tabpanel">
+                        <iframe class="news-iframe w-100 h-100" src="about:blank" data-src="https://api-aga.so-net.tw/news/show"></iframe>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-<script type="text/javascript" src="main.394d52bd49de4f206734.js"></script></body>
+<script type="text/javascript" src="main.33c5c8ca65712b7d0eb0.js"></script></body>
 
 </html>
