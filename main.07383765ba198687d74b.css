@@ -15,6 +15,7 @@ body {
 
 .logo {
     margin: auto;
+    width: 6rem;
     padding: 3rem 0;
     opacity: 0.75;
 }
